@@ -9,9 +9,14 @@ container.appendChild(element); */
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "bootstrap/dist/css/bootstrap.css";
+import "./components/styles/global.css";
+
+import Badge from "./components/badges";
+
 //const element = <h1>Hello, badges from REACT</h1>; //JSX
 let name = "Andres";
-const element = <h1>Hola soy {false}</h1>;
+const element = <h1>Hola soy {name}</h1>;
 /* const element = React.createElement(
   "a",
   { class: "Hola", href: "https://google.com" },
@@ -20,3 +25,4 @@ const element = <h1>Hola soy {false}</h1>;
 const container = document.getElementById("app");
 
 ReactDOM.render(element, container);
+ReactDOM.render(<Badge />, container);
