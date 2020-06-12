@@ -29,6 +29,19 @@
   padding: 0.5rem 0;
   background: #F4F4F7;
   }
+
+  .BadgeList__section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 0.5rem 0;
+  }
+
+  .BadgeList__section-info h6 {
+    margin:0 auto;
+    color:#4799de;
+  }
   
   .Badge__avatar {
   border-radius: 50%;
@@ -46,3 +59,5 @@
   font-weight: bold;
   font-style: italic;
   }
+
+  

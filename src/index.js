@@ -12,7 +12,7 @@ import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./components/styles/global.css";
 
-import BadgeNew from "./pages/BadgeNew";
+import App from "./components/App";
 
 //const element = <h1>Hello, badges from REACT</h1>; //JSX
 let name = "Andres";
@@ -25,4 +25,4 @@ const element = <h1>Hola soy {name}</h1>;
 const container = document.getElementById("app");
 
 ReactDOM.render(element, container);
-ReactDOM.render(<BadgeNew />, container);
+ReactDOM.render(<App />, container);
