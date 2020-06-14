@@ -25,10 +25,11 @@ const api = {
   badges: {
     list() {
       //return [];
-      throw new Error(`Todo se fue para el carajo`);
-      //return callApi("/badges");
+      //throw new Error(`Todo se fue para el carajo`);
+      return callApi("/badges");
     },
     create(badge) {
+      /* throw new Error("Error 500: Server failed"); */
       return callApi(`/badges`, {
         method: "POST",
         body: JSON.stringify(badge),
